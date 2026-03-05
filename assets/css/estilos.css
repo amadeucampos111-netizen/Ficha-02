@@ -7,11 +7,13 @@
 } 
 
 .bng-navbar {
- background-color: #2c3033;
+ background-color: #343a40;
  display: flex; /* Alinha os elementos em linha */
  align-items: center;/* Centraliza os itens verticalmente */
  justify-content: space-between;/* Distribui os itens igualmente */
  padding: 10px 20px;/* Adiciona espaçamento interno */
+ position: sticky/* Fixa a barra no topo ao fazer scroll */
+ 
 }
 
 .bng-navbar div {
@@ -41,7 +43,7 @@
  color: #dddddd; /* Define a cor dos links */
 }
 .container-navegacao a:hover {
- color: #ffffff; /* Muda a cor ao passar o mouse */
+ color: #0056b3; /* Muda a cor ao passar o mouse */
 }
 
 /* Estilos para o botão da Área Cliente */
@@ -65,6 +67,10 @@
  color: white; /* Cor do texto */
  padding: 40px 20px; /* Espaçamento interno */
  flex-wrap: wrap; /* Permite que os itens fiquem responsivos */
+ position: fixed; /* Fixa o rodapé no fundo da página */
+ bottom: 0; /* Alinha o rodapé à parte inferior */
+ left: 0; /* Alinha o rodapé à esquerda */
+ width: 100%; /* Faz o rodapé ocupar toda a largura da página */
 }
 .footer-section {
  flex: 1; /* Faz com que as seções tenham tamanhos iguais */
@@ -84,10 +90,11 @@
 }
 /* Texto Genérico */
 .container-texto-generico {
- display: flex; /* Ativa o layout flexível */
+display: flex; /* Ativa o layout flexível */
  justify-content: center; /* Centraliza os elementos horizontalmente */
- flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
- gap: 20px; /* Adiciona espaço entre os elementos */
- padding: 40px; /* Espaçamento interno para melhor organização */
+ flex-wrap: wrap; /* Permite quebra de linha em ecrãs menores */
+ gap: 20px; /* Espaço entre os elementos */
+ padding: 100px 40px; /* Espaçamento interno (superior/inferior e laterais) */
  text-align: center; /* Centraliza o texto dentro dos artigos */
+ min-height: 100vh; /* Garante altura mínima de uma janela (ecrã) */
 }
